@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+    <h2>Column 1</h2>
+    <p>윤여준 전 환경부 장관은 17일 윤석열 전 검찰총장을 내년 대선에서 당선 확률이 가장 큰 인물로 평가했다. 윤 전 총장이 국민의힘 소속 두 명의 전직 대통령을 단죄한 만큼 당 내부의 거부감을 해소해야 국민의힘과 함께 할 것이라고 전망했다.</p>
+  </div>
+  <div class="column" style="background-color:#fff;">
+    <h2>Column 2</h2>
+    <p>윤 전 장관은 이날 오전 진행된 국민의힘 초선 공부모임인 '명불허전보수다'에서 "윤 전 총장이 국민의힘에 들어오는 것이 성사되면 당선 확률이 강력한 대선주자가 아니겠나 생각한다"고 말했다.</p>
+  </div>
+</div>
+
+</body>
+</html>
